@@ -9,13 +9,14 @@
     cursor: pointer;
     border-width: 15px;
     border-style: solid;
-    border-color: rgb(1, 99, 11);
+    border-color: rgb(1, 62, 7);
     border-radius: 30px;
     font-family: 'Times New Roman', Times, serif;
     background-image: url("https://www.chi-athenaeum.org/assets/GDA2022/16583-2.jpg");
     background-size: cover;
     background-position: center;
     height: 35vh;
+    margin-left: 475px;
     
 }
 h1:hover{
