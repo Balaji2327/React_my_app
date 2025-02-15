@@ -4,21 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  alert("Welcome to my webSite");
+  const name={
+    name:"BALAJI R",
+    age:19
+  };
+  console.log("age="+name.age);
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <h1>BALAJI R</h1>
-      <button>CRICKET</button>
+     <div class="text">
+      <h1>Name : {name.name}</h1>
+      <h1>Age : {name.age}</h1>
+     </div>
     </>
   )
 }
