@@ -26,7 +26,7 @@ function App() {
   
   return (
     <>
-    <div id="main" className={color?"lm":"dm"}>
+    <div id="main" className={color?"fs":"tp"}>
      <Component name1={name.name} age1={name.age} hobby1={name.hobby} name2={nameName.name} age2={nameName.age} hobby2={nameName.hobby}/>
      <button onClick={switchColor}>Switch Color</button>
     
