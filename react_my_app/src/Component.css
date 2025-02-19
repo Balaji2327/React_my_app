@@ -3,8 +3,9 @@
     border: 10px solid;
     margin-left: 500px;
     margin-right: 500px;
+    margin-bottom: 50px;
     border-color: rgb(255, 255, 255);
-    padding: 30px;
+    padding: 10px;
     background-color: rgba(51, 51, 164, 0.578);
     border-radius: 30px;
    
@@ -15,11 +16,11 @@ h2{
 }
 #container2{
     border: 10px solid;
-    margin-top: 50px;
+    margin: 0px;
     margin-left: 500px;
     margin-right: 500px;
     border-color: rgb(255, 255, 255);
-    padding: 30px;
+    padding: 10px;
     background-color: rgba(51, 51, 164, 0.578);
     border-radius: 30px;
 }

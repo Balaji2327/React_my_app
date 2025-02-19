@@ -1,8 +1,14 @@
 import './App.css'
 import Component from './Component';
+import { useState } from 'react';
 
 function App() {
 
+  const [color,setColor]=useState(true)
+
+  const switchColor=()=>{
+    setColor(!color)
+  }
   const name={
     name:"BALAJI R",
     age:19,
@@ -20,10 +26,10 @@ function App() {
   
   return (
     <>
+    <div id="main" className={color?"lm":"dm"}>
      <Component name1={name.name} age1={name.age} hobby1={name.hobby} name2={nameName.name} age2={nameName.age} hobby2={nameName.hobby}/>
-     <div id="text">
-    <button onClick={()=>alert("Thanks for the Click")}>SINGLE CLICK</button>
-    <button onDoubleClick={()=>alert("Thanks for the Double Click")}>DOUBLE CLICK</button>
+     <button onClick={switchColor}>Switch Color</button>
+    
     </div>
     </>
   )
