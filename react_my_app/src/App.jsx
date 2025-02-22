@@ -1,36 +1,28 @@
 import './App.css'
-import Component from './Component';
 import { useState } from 'react';
 
 function App() {
 
-  const [color,setColor]=useState(true)
+  const[regno,setRegno] = useState("")
+  const[email,setEmail] = useState("")
+  const[password,setPassword] = useState("")
 
-  const switchColor=()=>{
-    setColor(!color)
+ 
+  const fillForm = (e) => {
+    e.preventDefault(); 
+    alert("Form Filled");
   }
-  const name={
-    name:"BALAJI R",
-    age:19,
-    hobby:"CRICKET"
-
-  };
-  const nameName={
-    name:"BALU G",
-    age:18,
-    hobby:"HANDBALL"
-
-  };
-  
   
   
   return (
     <>
-    <div id="main" className={color?"fs":"tp"}>
-     <Component name1={name.name} age1={name.age} hobby1={name.hobby} name2={nameName.name} age2={nameName.age} hobby2={nameName.hobby}/>
-     <button onClick={switchColor}>Switch Color</button>
-    
-    </div>
+
+     <form onSubmit={fillForm} >
+      <input type="text"id="regno" placeholder='Enter your RegNo' required value={regno} onChange={(e)=>setRegno(e.target.value)}/>
+      <input type="text"id="email" placeholder='Enter your Email ID' required value={email} onChange={(e)=>setEmail(e.target.value)}/>
+      <input type="password"id="password" placeholder='Enter your password' required value={password} onChange={(e)=>setPassword(e.target.value)}/>
+      <button type="submit">SUBMIT</button>
+      </form>
     </>
   )
 }
